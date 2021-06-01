@@ -47,9 +47,11 @@ public class AuditeurCNAM {
      *         homonymes...
      */
     public String login() {
+        String log=this.nom.substring(0,6).toLowerCase().replaceAll("-","_")+"_"+this.prenom.substring(0, 1).toLowerCase().replaceAll("-","_");
+
+       return log;
         
-        
-        return this.nom.substring(0,6).toLowerCase().replaceAll("-","_").replaceAll("^a-zA-Z0-9]","_")+"_"+this.prenom.substring(0, 1).toLowerCase().replaceAll("^a-zA-Z0-9]","_");// à compléter
+        //this.nom.substring(0,6).toLowerCase().replaceAll("-","_").replaceAll("^a-zA-Z0-9]","_")+"_"+this.prenom.substring(0, 1).toLowerCase().replaceAll("^a-zA-Z0-9]","_");// à compléter
         //return Normalizer.normalize(this.nom.substring(0,6).toLowerCase()+"_"+this.nom.substring(0, 1).toLowerCase(), Form.NFD);
     }
 

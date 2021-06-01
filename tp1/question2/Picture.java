@@ -4,6 +4,7 @@ import question1.Circle;
 import question1.Square;
 import question1.Triangle;
 
+
 /**
  * This class represents a simple picture. You can draw the picture using the
  * draw method. But wait, there's more: being an electronic picture, it can be
@@ -94,8 +95,9 @@ public class Picture {
      * slow move blue sun
      */
     public void moveSun(){
-        sun.slowMoveVertical(200);
-        sun.makeInvisible();
+        sun.slowMoveVertical(100);
+        
+        //sun.makeInvisible();
         
     }
 
