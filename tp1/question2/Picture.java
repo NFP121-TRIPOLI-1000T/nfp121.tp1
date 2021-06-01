@@ -95,7 +95,9 @@ public class Picture {
      * slow move blue sun
      */
     public void moveSun(){
-        sun.slowMoveVertical(100);
+        sun.slowMoveVertical(10);
+             sun.slowMoveVertical(200);
+            
         
         //sun.makeInvisible();
         
